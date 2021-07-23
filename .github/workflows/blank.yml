@@ -33,6 +33,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - name: checkout root
-        run: git pull origin main
+  build-sefl-host:
+    runs-on: self-host
+    steps:
+      - uses: actions/checkou@v2
+        with: 
+          ref: 'main'
+      - name: checkout new source local
+        run: git checkout origin main
   
