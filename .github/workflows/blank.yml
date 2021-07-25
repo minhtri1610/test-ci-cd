@@ -41,5 +41,5 @@ jobs:
       #     ref: 'main'
       #     token: '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'
       - name: checkout new source local
-        run: git checkout origin main
+        run: cd /home/sites/test-cicd/test-ci-cd | git checkout origin main
   
