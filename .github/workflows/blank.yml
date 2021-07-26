@@ -36,9 +36,9 @@ jobs:
   build-sefl-host:
     runs-on: self-hosted
     steps:
-      - uses: actions/masters
+      # - uses: actions/masters
       - name: run test
-      - run: echo xin chao
+        run: echo xin chao
       # - uses: actions/checkou@v1
         # with: 
         #   ref: 'main'
